@@ -4,6 +4,10 @@ A dark Neovim colorscheme inspired by the night sky illuminated by colorful ligh
 
 The UI stays dark and neutral while syntax and semantic elements provide muted blue, cyan, green, yellow, red, purple, orange, and pink accents.
 
+| Preview |
+|---|
+| [<img src="https://raw.githubusercontent.com/gilpra/assets-repo/main/screenshots/yoruakari_nvim.png" width="500">](yoruakari) |
+
 ## Requirements
 
 - Neovim 0.9+
