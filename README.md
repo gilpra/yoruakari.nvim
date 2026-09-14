@@ -6,7 +6,7 @@ The UI stays dark and neutral while syntax and semantic elements provide muted b
 
 | Preview |
 |---|
-| [<img src="https://raw.githubusercontent.com/gilpra/assets-repo/main/screenshots/yoruakari_nvim.png" width="500">](yoruakari) |
+| [<img src="https://raw.githubusercontent.com/gilpra/assets-repo/main/screenshots/yoruakari_nvim.png" width="500">](https://raw.githubusercontent.com/gilpra/assets-repo/main/screenshots/yoruakari_nvim.png) |
 
 ## Requirements
 
