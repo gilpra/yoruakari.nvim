@@ -33,7 +33,7 @@ M.get = function(c)
 		CursorIM = { fg = c.bg, bg = c.fg },
 
 		StatusLine = { fg = c.fg, bg = c.bg_dark },
-		StatusLineNC = { fg = c.comment, bg = c.bg_dark },
+		StatusLineNC = { fg = c.dim, bg = c.bg_dark },
 
 		TabLine = {
 			fg = c.muted,
@@ -331,35 +331,28 @@ M.get = function(c)
 		-- Statusline
 		------------------------------------------------------------------
 
-		StatusLineNormal = {
-			fg = c.bg,
-			bg = c.white,
-			bold = true,
-		},
+		-- Mode badges: dark text on pastel accent backgrounds.
+		StatusLineNormal = { fg = c.bg_dark, bg = c.blue, bold = true },
+		StatusLineInsert = { fg = c.bg_dark, bg = c.green, bold = true },
+		StatusLineVisual = { fg = c.bg_dark, bg = c.purple, bold = true },
+		StatusLineReplace = { fg = c.bg_dark, bg = c.red, bold = true },
+		StatusLineCommand = { fg = c.bg_dark, bg = c.orange, bold = true },
+		StatusLineTerminal = { fg = c.bg_dark, bg = c.teal, bold = true },
 
-		StatusLineInsert = {
-			fg = c.bg,
-			bg = c.light,
-			bold = true,
-		},
+		-- Colored statusline components.
+		StatusLineFilename = { fg = c.cyan, bg = c.bg_dark, bold = true },
+		StatusLineSeparator = { fg = c.comment, bg = c.bg_dark },
+		StatusLineBranch = { fg = c.purple, bg = c.bg_dark, bold = true },
+		StatusLineModified = { fg = c.yellow, bg = c.bg_dark, bold = true },
+		StatusLineMeta = { fg = c.orange, bg = c.bg_dark },
+		StatusLineFiletype = { fg = c.blue, bg = c.bg_dark },
+		StatusLinePosition = { fg = c.green, bg = c.bg_dark, bold = true },
 
-		StatusLineVisual = {
-			fg = c.bg,
-			bg = c.muted,
-			bold = true,
-		},
-
-		StatusLineReplace = {
-			fg = c.bg,
-			bg = c.dim,
-			bold = true,
-		},
-
-		StatusLineCommand = {
-			fg = c.bg,
-			bg = c.comment,
-			bold = true,
-		},
+		-- Diagnostics are given the same dark background as the statusline.
+		StatusLineDiagnosticError = { fg = c.red, bg = c.bg_dark, bold = true },
+		StatusLineDiagnosticWarn = { fg = c.orange, bg = c.bg_dark, bold = true },
+		StatusLineDiagnosticInfo = { fg = c.blue, bg = c.bg_dark },
+		StatusLineDiagnosticHint = { fg = c.teal, bg = c.bg_dark },
 
 		------------------------------------------------------------------
 		-- Treesitter
